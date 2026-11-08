@@ -578,7 +578,7 @@ def ask_agent(question: str, history: list):
     while True:
         response = client.messages.create(
             model="claude-sonnet-5",
-            max_tokens=3000,
+            max_tokens=5000,
             tools=AGENT_TOOLS,
             system=(
                 "너는 업로드된 문서(한글 또는 영어) 기반 질의응답 에이전트야. "
